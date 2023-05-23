@@ -106,12 +106,49 @@ system2("systeminfo", stdout = TRUE)
 ```{r}
 system2("cmd", args = c("/c", "wmic cpu get name"), stdout = TRUE)
 ```
+    [1] "Name                                    \r"
+    [2] "AMD Ryzen 7 4700U with Radeon Graphics  \r"
+    [3] "\r"
 
 3\. Выполнение команды system("powershell.exe Get-EventLog -LogName System -Newest 30") для вывода логов
 
 ```{r}
 system2("powershell.exe", args = c("Get-EventLog", "-LogName", "System", "-Newest", "30"), stdout = TRUE)
 ```
+    [1] ""                                                                                                                                                                                                                        
+    [2] "   Index Time          EntryType   Source                 InstanceID Message                                           "                                                                                                 
+    [3] "   ----- ----          ---------   ------                 ---------- -------                                           "                                                                                                 
+    [4] "   10603 \xac\xa0\xa9 23 23:09  Warning     Microsoft-Windows...         1014 \x90\xa0\xa7\xe0\xa5襭\xa8\xa5 \xa8\xac\xa5\xad \xa4\xab\xef \xa8\xac\xa5\xad\xa8 portal.mail.ru \xa8\xe1⥪\xab..."                         
+    [5] "   10602 \xac\xa0\xa9 23 22:19  Information Microsoft-Windows...          566 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '566' \xa2..."        
+    [6] "   10601 \xac\xa0\xa9 23 22:15  Information Microsoft-Windows...          566 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '566' \xa2..."        
+    [7] "   10600 \xac\xa0\xa9 23 21:26  Information Microsoft-Windows...          566 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '566' \xa2..."        
+    [8] "   10599 \xac\xa0\xa9 23 21:18  Information Microsoft-Windows...          566 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '566' \xa2..."        
+    [9] "   10598 \xac\xa0\xa9 23 20:27  Error       DCOM                        10010 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '10010'..."           
+    [10] "   10597 \xac\xa0\xa9 23 20:25  Warning     DCOM                        10016 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '10016'..."           
+    [11] "   10596 \xac\xa0\xa9 23 20:25  Warning     DCOM                        10016 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '10016'..."           
+    [12] "   10595 \xac\xa0\xa9 23 20:25  Warning     DCOM                        10016 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '10016'..."           
+    [13] "   10594 \xac\xa0\xa9 23 20:25  Warning     DCOM                        10016 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '10016'..."           
+    [14] "   10593 \xac\xa0\xa9 23 20:25  Information BTHUSB                 1074069522 \x91\xa8\xe1⥬\xa0 Windows \xad\xa5 \xac\xae\xa6\xa5\xe2 \xe1\xae\xe5࠭\xa8\xe2\xec \xaa\xae\xa4\xeb \xaf\u0ba2\xa5\xe0\xaa..."               
+    [15] "   10592 \xac\xa0\xa9 23 20:25  Information Microsoft-Windows...         7001 \x93\xa2\xa5\xa4\xae\xac\xab\xa5\xad\xa8\xa5 \xae \xa2室\xa5 \xaf\xae\xab짮\xa2\xa0⥫\xef \xa4\xab\xef \xafணࠬ\xac\xeb ..."                   
+    [16] "   10591 \xac\xa0\xa9 23 20:25  Information Microsoft-Windows...            1 \x91\xa8\xe1⥬\xa0 \xa2\xeb諠 \xa8\xa7 \xe1\xae\xe1\xe2\xaeﭨ\xef \xaf\xae\xad\xa8\xa6\xa5\xad\xad\xae\xa3\xae \xed\xad\xa5࣮\xaf\xae..."      
+    [17] "   10590 \xac\xa0\xa9 23 20:25  Information Microsoft-Windows...          566 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '566' \xa2..."        
+    [18] "   10589 \xac\xa0\xa9 23 20:25  Information Netwtw10               1073748845 7021 - Connection telemetry fields and analysis..."                                                                                        
+    [19] "   10588 \xac\xa0\xa9 23 20:25  Information Microsoft-Windows...          566 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '566' \xa2..."        
+    [20] "   10587 \xac\xa0\xa9 23 20:25  Information Microsoft-Windows...           32 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '32' \xa2 ..."        
+    [21] "   10586 \xac\xa0\xa9 23 20:25  Information Microsoft-Windows...           18 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '18' \xa2 ..."        
+    [22] "   10585 \xac\xa0\xa9 23 20:25  Information Microsoft-Windows...           30 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '30' \xa2 ..."        
+    [23] "   10584 \xac\xa0\xa9 23 20:25  Information Netwtw10               1073748849 7025 - Dump after return from D3 before cmd       "                                                                                        
+    [24] "   10583 \xac\xa0\xa9 23 20:25  Information Microsoft-Windows...            1 \x82\xae\xa7\xac\xae\xa6\xad\xae\xa5 \xae\xa1\xad\xa0\xe0㦥\xad\xa8\xa5 CVE: 2023-05-23T17:25:17...."                                      
+    [25] "   10582 \xac\xa0\xa9 23 19:30  Information Microsoft-Windows...          107 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '107' \xa2..."        
+    [26] "   10581 \xac\xa0\xa9 23 19:30  Information Microsoft-Windows...           42 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '42' \xa2 ..."        
+    [27] "   10580 \xac\xa0\xa9 23 19:30  Information Microsoft-Windows...          566 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '566' \xa2..."        
+    [28] "   10579 \xac\xa0\xa9 23 19:30  Information Microsoft-Windows...          187 \x8d\xa5 \xad\xa0\xa9\xa4\xa5\xad\xae \xae\xaf\xa8ᠭ\xa8\xa5 \xa4\xab\xef ᮡ\xeb\xe2\xa8\xef \xe1 \xaa\xae\xa4\xae\xac '187' \xa2..."        
+    [29] "   10578 \xac\xa0\xa9 23 19:30  Information Win32k                 1073742091 \x8f\u0ba2\xa5ઠ \xaa\xa0\xe7\xa5\xe1⢠ \xae\xa1\xae\xe0㤮\xa2\xa0\xad\xa8\xef \xe1 \xa2\xae\xa7\xac\xae\xa6\xad\xae\xe1\xe2\xec\xee \xe1..."
+    [30] "   10577 \xac\xa0\xa9 23 19:30  Information Microsoft-Windows...         7002 \x93\xa2\xa5\xa4\xae\xac\xab\xa5\xad\xa8\xa5 \xae \xa2\xeb室\xa5 \xaf\xae\xab짮\xa2\xa0⥫\xef \xa4\xab\xef \xafணࠬ\xac\xeb..."                
+    [31] "   10576 \xac\xa0\xa9 23 19:28  Information Netwtw10               1073748845 7021 - Connection telemetry fields and analysis..."                                                                                        
+    [32] "   10575 \xac\xa0\xa9 23 19:28  Information Netwtw10               1073748835 7011 - radio ON                                   "                                                                                        
+    [33] "   10574 \xac\xa0\xa9 23 19:27  Information BTHUSB                 1074069522 \x91\xa8\xe1⥬\xa0 Windows \xad\xa5 \xac\xae\xa6\xa5\xe2 \xe1\xae\xe5࠭\xa8\xe2\xec \xaa\xae\xa4\xeb \xaf\u0ba2\xa5\xe0\xaa..."               
+    [34] ""                                                                                                                                                                                                                        
 
 ### Оценка результата
 
