@@ -35,7 +35,7 @@ engine: knitr
 system2("systeminfo", stdout = TRUE)
 ```
 
-[1] ""                                                                                                                                                                                    
+    [1] ""                                                                                                                                                                                    
  [2] "\x88\xac\xef 㧫\xa0:                         DESKTOP-LOUQV3Q"                                                                                                                        
  [3] "\x8d\xa0\xa7\xa2\xa0\xad\xa8\xa5 \x8e\x91:                      \x8c\xa0\xa9\xaa\xe0\xae\xe1\xae\xe4\xe2 Windows 11 \x84\xae\xac\xa0\xe8\xad\xef\xef"                                
  [4] "\x82\xa5\xe0\xe1\xa8\xef \x8e\x91:                        10.0.22621 \x8d/\x84 \xaf\xae\xe1\xe2\u0ba5\xad\xa8\xa5 22621"                                                             
