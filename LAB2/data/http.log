@@ -1,0 +1,19 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	http
+#open	2023-05-25-19-04-04
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	host	uri	referrer	version	user_agent	origin	request_body_len	response_body_len	status_code	status_msg	info_code	info_msg	tags	username	password	proxied	orig_fuids	orig_filenames	orig_mime_types	resp_fuids	resp_filenames	resp_mime_types
+#types	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	count	count	count	string	count	string	set[enum]	string	string	set[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]
+1685063043.982014	Ct108X2hskk9AP5NGe	10.0.2.15	56778	34.122.121.32	80	1	-	-	-	-	1.1	-	-	0	0	204	No Content	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1685063343.800329	CJW31k3oOR6Kn4KgVl	10.0.2.15	47060	91.189.91.49	80	1	-	-	-	-	1.1	-	-	0	0	204	No Content	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1685063643.788267	CPLzNk3wgv3EL7DT9	10.0.2.15	38288	185.125.190.49	80	1	-	-	-	-	1.1	-	-	0	0	204	No Content	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1685063880.554061	CH4KVKi1RrlvoUG01	10.0.2.15	48396	195.135.221.134	80	1	-	-	-	-	1.1	-	-	0	1554	200	OK	-	-	(empty)	-	-	-	-	-	-	FVhMUO2XOIVLqBozXe	InRelease	text/plain
+1685063880.884366	C4bgm74Okn2ehdZmHl	10.0.2.15	58652	91.189.91.38	80	1	-	-	-	-	1.1	-	-	0	0	304	Not Modified	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1685063881.006386	C4bgm74Okn2ehdZmHl	10.0.2.15	58652	91.189.91.38	80	2	-	-	-	-	1.1	-	-	0	1165	200	OK	-	-	(empty)	-	-	-	-	-	-	FB1rIu4InPUzTr8nH9	-	text/plain
+1685063943.658666	CZtzsU1qKzI7mZgxFc	10.0.2.15	50200	185.125.190.17	80	1	-	-	-	-	1.1	-	-	0	0	204	No Content	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1685064243.653518	CMRidp4lGDC06Smeq2	10.0.2.15	41448	185.125.190.17	80	1	-	-	-	-	1.1	-	-	0	0	204	No Content	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1685064543.796852	CtIQvW1XuwkTua7VZi	10.0.2.15	37034	91.189.91.49	80	1	-	-	-	-	1.1	-	-	0	0	204	No Content	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1685064708.827768	CSNaddCLfMy9Wqvmg	10.0.2.15	41098	52.85.46.42	80	1	-	-	-	-	1.1	-	-	0	471	200	OK	-	-	(empty)	-	-	-	-	-	-	FyhXym3TsDVlfOOjVc	-	application/ocsp-response
+1685064708.839646	CVBkl841c4cUWdH574	10.0.2.15	41084	52.85.46.42	80	1	-	-	-	-	1.1	-	-	0	471	200	OK	-	-	(empty)	-	-	-	-	-	-	Fn5D8b8oT6awoTvy	-	application/ocsp-response

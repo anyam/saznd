@@ -1,0 +1,12 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	files
+#open	2023-05-25-19-18-02
+#fields	ts	fuid	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted	extracted_cutoff	extracted_size
+#types	time	string	string	addr	port	addr	port	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string	bool	count
+1685063880.554061	FVhMUO2XOIVLqBozXe	CH4KVKi1RrlvoUG01	10.0.2.15	48396	195.135.221.134	80	HTTP	0	MD5,SHA1	text/plain	InRelease	0.002540	F	F	1554	1554	0	0	F	-	eb3fc0caa53ca57bae86e84061b781ba	1b8f874916f1b29146c8854b786d59c74283fdc6	-	-	-	-
+1685063881.006386	FB1rIu4InPUzTr8nH9	C4bgm74Okn2ehdZmHl	10.0.2.15	58652	91.189.91.38	80	HTTP	0	MD5,SHA1	text/plain	-	0.000000	F	F	1165	118747	0	0	F	-	f4a7adc74fd6022789baa9162ac9764b	eb16a1acc25b355c344b10c7347d1b86c57e66a1	-	-	-	-
+1685064708.827768	FyhXym3TsDVlfOOjVc	CSNaddCLfMy9Wqvmg	10.0.2.15	41098	52.85.46.42	80	HTTP	0	MD5,SHA1,OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	471	471	0	0	F	-	66c91e82a851e067c7ef7e0c57e540d6	72bad2f3f3cb39fc3b61b755f78a10b098918f3e	-	-	-	-
+1685064708.839646	Fn5D8b8oT6awoTvy	CVBkl841c4cUWdH574	10.0.2.15	41084	52.85.46.42	80	HTTP	0	MD5,SHA1,OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	471	471	0	0	F	-	66c91e82a851e067c7ef7e0c57e540d6	72bad2f3f3cb39fc3b61b755f78a10b098918f3e	-	-	-	-
