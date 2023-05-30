@@ -1,10 +1,4 @@
----
-title: "Ментальная карта"
-format: 
-    md:
-        output-file: README.md
-engine: knitr
----
+
 
 ## Цель работы
 
