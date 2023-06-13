@@ -34,7 +34,7 @@ docker-compose up -d
 
 4.  Проверка установленных средств для сбора информации
 
-![All text](https://github.com/MoonFlower18/threat_hunting/blob/main/Prak_3/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%D1%8B/3.png)
+![All text](https://github.com/anyam/saznd/blob/main/LAB3/средства%20сбора.png)
 
 5.  Новый DataView для filebeat
 
