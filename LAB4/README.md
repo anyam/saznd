@@ -1,7 +1,3 @@
----
-title: "lab4"
----
-
 # Развертывание Threat intelligence Platform OpenCTI
 
 ## Цель работы
